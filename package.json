@@ -1,0 +1,32 @@
+{
+  "name": "storage-access-react-router",
+  "type": "module",
+  "scripts": {
+    "express": "node ./express",
+    "react-router": "react-router dev",
+    "iframe": "node ./iframe",
+    "incorrect": "concurrently \"npm run react-router\" \"npm run iframe\"",
+    "correct": "concurrently \"npm run express\" \"npm run iframe\""
+  },
+  "dependencies": {
+    "@react-router/node": "^7.6.0",
+    "@react-router/serve": "^7.6.0",
+    "@types/express": "^5.0.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "isbot": "^5.1.27",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.0"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.6.0",
+    "@types/node": "^20",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
